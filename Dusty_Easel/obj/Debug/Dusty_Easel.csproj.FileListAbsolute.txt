@@ -1,0 +1,11 @@
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.exe.config
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.exe
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.pdb
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.AssemblyReference.cache
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.SuggestedBindingRedirects.cache
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.Form1.resources
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.Properties.Resources.resources
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.GenerateResource.cache
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.CoreCompileInputs.cache
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.exe
+C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.pdb
