@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-
+using System;
 
 namespace Dusty_Easel
 {
@@ -22,7 +22,12 @@ namespace Dusty_Easel
             Pencil,
             Eraser
         }
-
+        public void changeScale(float scale)
+        {
+            scaleFactor *= scale;
+            scaleFactor = Math.Min(Math.Max(scaleFactor, 0.5f), 10);
+            ApplyZoom();
+        }
         public Drawing(PictureBox easel)
         {
             _easel = easel;
@@ -143,7 +148,8 @@ namespace Dusty_Easel
 
         public void OpenImage(string filePath)
         {
-
+            canvas = new Bitmap(filePath);
+            ApplyZoom();
         }
 
         public void NewBitmap(int Height, int Width)

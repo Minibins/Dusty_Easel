@@ -9,3 +9,13 @@ C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.
 C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.CoreCompileInputs.cache
 C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.exe
 C:\Users\hacke\Desktop\Project\C#\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.pdb
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.exe.config
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.exe
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\bin\Debug\Dusty_Easel.pdb
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csprojAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.Form1.resources
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.GenerateResource.cache
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.exe
+C:\Users\user\Documents\GitHub\Dusty_Easel\Dusty_Easel\obj\Debug\Dusty_Easel.pdb

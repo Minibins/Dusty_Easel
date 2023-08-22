@@ -112,5 +112,18 @@ namespace Dusty_Easel
         {
 
         }
+
+        private void Form1_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Add)
+            {
+                drawing.changeScale(1.1f);
+            }
+            if (e.KeyCode == Keys.Subtract)
+            {
+                drawing.changeScale(0.9f);
+
+            }
+        }
     }
 }
