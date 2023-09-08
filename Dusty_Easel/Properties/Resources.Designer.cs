@@ -67,5 +67,15 @@ namespace Dusty_Easel.Properties
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Монтажная_область_1 {
+            get {
+                object obj = ResourceManager.GetObject("Монтажная область 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
