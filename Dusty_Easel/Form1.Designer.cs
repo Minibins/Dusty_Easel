@@ -34,6 +34,7 @@
             this.ColorNow = new System.Windows.Forms.PictureBox();
             this.loadPalette = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bucket = new System.Windows.Forms.Button();
             this.eraserButton = new System.Windows.Forms.Button();
             this.pencilButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -92,6 +93,7 @@
             this.Palette.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Palette.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Palette.Image = global::Dusty_Easel.Properties.Resources.Монтажная_область_1;
             this.Palette.Location = new System.Drawing.Point(1, -4);
             this.Palette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Palette.Name = "Palette";
@@ -130,6 +132,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bucket);
             this.panel2.Controls.Add(this.eraserButton);
             this.panel2.Controls.Add(this.pencilButton);
             this.panel2.Location = new System.Drawing.Point(668, 2);
@@ -138,30 +141,45 @@
             this.panel2.Size = new System.Drawing.Size(129, 430);
             this.panel2.TabIndex = 2;
             // 
+            // bucket
+            // 
+            this.bucket.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bucket.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.bucket.Location = new System.Drawing.Point(4, 88);
+            this.bucket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bucket.Name = "bucket";
+            this.bucket.Size = new System.Drawing.Size(115, 39);
+            this.bucket.TabIndex = 2;
+            this.bucket.Text = "bucket";
+            this.bucket.UseVisualStyleBackColor = true;
+            this.bucket.Click += new System.EventHandler(this.button2_Click);
+            // 
             // eraserButton
             // 
             this.eraserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.eraserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.eraserButton.Location = new System.Drawing.Point(11, 59);
+            this.eraserButton.Location = new System.Drawing.Point(4, 45);
             this.eraserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.eraserButton.Name = "eraserButton";
             this.eraserButton.Size = new System.Drawing.Size(115, 39);
             this.eraserButton.TabIndex = 1;
             this.eraserButton.Text = "eraser";
             this.eraserButton.UseVisualStyleBackColor = true;
+            this.eraserButton.Click += new System.EventHandler(this.eraserButton_Click);
             this.eraserButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.eraserButton_MouseDown);
             // 
             // pencilButton
             // 
             this.pencilButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pencilButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.pencilButton.Location = new System.Drawing.Point(11, 14);
+            this.pencilButton.Location = new System.Drawing.Point(4, 2);
             this.pencilButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pencilButton.Name = "pencilButton";
             this.pencilButton.Size = new System.Drawing.Size(115, 39);
             this.pencilButton.TabIndex = 0;
             this.pencilButton.Text = "pencil";
             this.pencilButton.UseVisualStyleBackColor = true;
+            this.pencilButton.Click += new System.EventHandler(this.pencilButton_Click);
             this.pencilButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pencilButton_MouseDown);
             // 
             // menuStrip1
@@ -190,28 +208,28 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -222,7 +240,7 @@
             this.NewBitmap.Controls.Add(this.Height);
             this.NewBitmap.Controls.Add(this.Width);
             this.NewBitmap.Location = new System.Drawing.Point(269, 169);
-            this.NewBitmap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NewBitmap.Margin = new System.Windows.Forms.Padding(4);
             this.NewBitmap.Name = "NewBitmap";
             this.NewBitmap.Size = new System.Drawing.Size(237, 155);
             this.NewBitmap.TabIndex = 4;
@@ -231,7 +249,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(52, 100);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 28);
             this.button1.TabIndex = 2;
@@ -243,7 +261,7 @@
             // 
             this.Height.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Height.Location = new System.Drawing.Point(52, 57);
-            this.Height.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Height.Margin = new System.Windows.Forms.Padding(4);
             this.Height.Name = "Height";
             this.Height.Size = new System.Drawing.Size(133, 22);
             this.Height.TabIndex = 1;
@@ -252,7 +270,7 @@
             // 
             this.Width.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Width.Location = new System.Drawing.Point(52, 25);
-            this.Width.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Width.Margin = new System.Windows.Forms.Padding(4);
             this.Width.Name = "Width";
             this.Width.Size = new System.Drawing.Size(133, 22);
             this.Width.TabIndex = 0;
@@ -264,7 +282,7 @@
             this.Main.Controls.Add(this.easel);
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Main.Location = new System.Drawing.Point(0, 28);
-            this.Main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Main.Margin = new System.Windows.Forms.Padding(4);
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(800, 422);
             this.Main.TabIndex = 5;
@@ -318,6 +336,7 @@
         private System.Windows.Forms.TextBox Height;
         private System.Windows.Forms.TextBox Width;
         private System.Windows.Forms.Panel Main;
+        private System.Windows.Forms.Button bucket;
     }
 }
 

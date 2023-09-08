@@ -47,12 +47,12 @@ namespace Dusty_Easel
 
         private void pencilButton_MouseDown(object sender, MouseEventArgs e)
         {
-            drawing.pencilButton_MouseDown();
+            drawing.usingBrush = Drawing.DrawingTool.Pencil;
         }
 
         private void eraserButton_MouseDown(object sender, MouseEventArgs e)
         {
-            drawing.eraserButton_MouseDown();
+            drawing.usingBrush = Drawing.DrawingTool.Eraser;
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -124,6 +124,21 @@ namespace Dusty_Easel
                 drawing.changeScale(0.9f);
 
             }
+        }
+
+        private void pencilButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eraserButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            drawing.usingBrush = Drawing.DrawingTool.Bucket;
         }
     }
 }
