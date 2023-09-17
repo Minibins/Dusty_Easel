@@ -9,11 +9,12 @@ namespace Dusty_Easel
         {
             Bitmap image = (Bitmap)Image.Image;
 
-            if (e.X >= 0 && e.X < image.Width && e.Y >= 0 && e.Y < image.Height)
-            {
-                Color pixelColor = image.GetPixel(e.X, e.Y);
-                return pixelColor;
-            }
+                if (e.X >= 0 && e.X < image.Width && e.Y >= 0 && e.Y < image.Height)
+                {
+                    Color pixelColor = image.GetPixel(e.X, e.Y);
+                    return pixelColor;
+                }
+
             return Color.Empty;
         }
     }
