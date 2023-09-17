@@ -55,7 +55,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GetPixel.cs" />
+    <Compile Include="GraphicFeatures.cs" />
     <Compile Include="LoadImage.cs" />
+    <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -86,6 +88,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Монтажная область 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\menu\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\menu\easel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Paintinss.png" />
+    <None Include="UI\menu\Paintinss.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -121,4 +121,13 @@
   <data name="Монтажная область 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Монтажная область 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\menu\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="easel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\menu\easel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paintinss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\menu\Paintinss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

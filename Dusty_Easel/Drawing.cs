@@ -16,7 +16,7 @@ namespace Dusty_Easel
         public Color brushColor = Color.Black;
         private DrawingTool usingBrush = DrawingTool.Pencil;
         private PictureBox _easel;
-
+        private GraphicFeatures gr;
         private enum DrawingTool
         {
             Pencil,
@@ -26,10 +26,11 @@ namespace Dusty_Easel
         {
             scaleFactor *= scale;
             scaleFactor = Math.Min(Math.Max(scaleFactor, 0.5f), 10);
-            ApplyZoom();
+            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
         }
         public Drawing(PictureBox easel)
         {
+            gr = new GraphicFeatures();
             _easel = easel;
             InitializeCanvas();
             getPixel = new GetPixel();
@@ -54,30 +55,14 @@ namespace Dusty_Easel
             try
             {
                 canvas.SetPixel(pixel.X, pixel.Y, color);
-                ApplyZoom();
+                
+                _easel.Image = gr.ApplyZoom(canvas,scaleFactor,_easel);
                 _easel.Invalidate();
             }
             catch { }
         }
 
-        private void ApplyZoom()
-        {
-            int newWidth = (int)(canvas.Width * scaleFactor);
-            int newHeight = (int)(canvas.Height * scaleFactor);
-            Bitmap scaledBitmap = new Bitmap(newWidth, newHeight);
-            Graphics scaledGraphics = Graphics.FromImage(scaledBitmap);
-
-            try
-            {
-                scaledGraphics.InterpolationMode = InterpolationMode.NearestNeighbor;
-                scaledGraphics.DrawImage(canvas, new Rectangle(0, 0, newWidth, newHeight));
-                _easel.Image = scaledBitmap;
-            }
-            finally
-            {
-                scaledGraphics.Dispose();
-            }
-        }
+       
 
         public void easel_MouseDown(MouseEventArgs e)
         {
@@ -113,7 +98,7 @@ namespace Dusty_Easel
             try
             {
                 canvas.SetPixel(pixel.X, pixel.Y, Color.Transparent);
-                ApplyZoom();
+                _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
                 _easel.Invalidate();
             }
             catch { }
@@ -149,13 +134,13 @@ namespace Dusty_Easel
         public void OpenImage(string filePath)
         {
             canvas = new Bitmap(filePath);
-            ApplyZoom();
+            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
         }
 
         public void NewBitmap(int Height, int Width)
         {
             canvas = new Bitmap(Width, Height);
-            ApplyZoom();
+            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
         }
     }
 }

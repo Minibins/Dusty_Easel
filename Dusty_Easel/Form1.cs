@@ -7,17 +7,14 @@ namespace Dusty_Easel
     public partial class Form1 : Form
     {
         private LoadImage loadImage;
-
+        private MainMenu menu;
         private Drawing drawing;
-
-
-
-
         public Form1()
         {
             InitializeComponent();
             loadImage = new LoadImage();
             drawing = new Drawing(easel);
+            menu = new MainMenu(Menu);
         }
 
         private void easel_MouseDown(object sender, MouseEventArgs e)
@@ -124,6 +121,11 @@ namespace Dusty_Easel
                 drawing.changeScale(0.9f);
 
             }
+        }
+
+        private void Menu_MouseMove(object sender, MouseEventArgs e)
+        {
+            menu.MenuBackground(e);
         }
     }
 }
