@@ -47,12 +47,12 @@ namespace Dusty_Easel
 
         private void pencilButton_MouseDown(object sender, MouseEventArgs e)
         {
-            drawing.usingBrush = Drawing.DrawingTool.Pencil;
+            drawing.pencilButton_MouseDown();
         }
 
         private void eraserButton_MouseDown(object sender, MouseEventArgs e)
         {
-            drawing.usingBrush = Drawing.DrawingTool.Eraser;
+            drawing.eraserButton_MouseDown();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -75,7 +75,7 @@ namespace Dusty_Easel
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "PNG files (*.png)|*.png";
+            saveFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg;*.gif;*.bmp)|*.png;*.jpg;*.jpeg;*.gif;*.bmp|All Files (*.*)|*.*";
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName;
@@ -83,17 +83,7 @@ namespace Dusty_Easel
             }
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files (*.png;*.jpg;*.jpeg;*.gif;*.bmp)|*.png;*.jpg;*.jpeg;*.gif;*.bmp|All Files (*.*)|*.*";
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string filePath = openFileDialog.FileName;
-                drawing.OpenImage(filePath);
-            }
-        }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -113,20 +103,7 @@ namespace Dusty_Easel
 
         }
 
-        private void Form1_KeyDown_1(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Add)
-            {
-                drawing.changeScale(1.1f);
-            }
-            if (e.KeyCode == Keys.Subtract)
-            {
-                drawing.changeScale(0.9f);
-
-            }
-        }
-
-        private void pencilButton_Click(object sender, EventArgs e)
+        private void Width_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -136,9 +113,9 @@ namespace Dusty_Easel
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ColorNow_Click(object sender, EventArgs e)
         {
-            drawing.usingBrush = Drawing.DrawingTool.Bucket;
+
         }
     }
 }
