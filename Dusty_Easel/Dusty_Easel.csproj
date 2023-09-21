@@ -55,7 +55,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GetPixel.cs" />
-    <Compile Include="GraphicFeatures.cs" />
+    <Compile Include="Features.cs" />
     <Compile Include="LoadImage.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
@@ -96,6 +96,9 @@
     <None Include="UI\menu\easel.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.png" />
+    <Content Include="2.png" />
+    <Content Include="3.png" />
     <Content Include="Paintinss.png" />
     <None Include="UI\menu\Paintinss.png" />
   </ItemGroup>

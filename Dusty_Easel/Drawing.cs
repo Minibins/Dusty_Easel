@@ -16,7 +16,7 @@ namespace Dusty_Easel
         public Color brushColor = Color.Black;
         private DrawingTool usingBrush = DrawingTool.Pencil;
         private PictureBox _easel;
-        private GraphicFeatures gr;
+       
         private enum DrawingTool
         {
             Pencil,
@@ -26,11 +26,11 @@ namespace Dusty_Easel
         {
             scaleFactor *= scale;
             scaleFactor = Math.Min(Math.Max(scaleFactor, 0.5f), 10);
-            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
+            _easel.Image = Features.ApplyZoom(canvas, scaleFactor, _easel);
         }
         public Drawing(PictureBox easel)
         {
-            gr = new GraphicFeatures();
+            
             _easel = easel;
             InitializeCanvas();
             getPixel = new GetPixel();
@@ -56,7 +56,7 @@ namespace Dusty_Easel
             {
                 canvas.SetPixel(pixel.X, pixel.Y, color);
                 
-                _easel.Image = gr.ApplyZoom(canvas,scaleFactor,_easel);
+                _easel.Image = Features.ApplyZoom(canvas,scaleFactor,_easel);
                 _easel.Invalidate();
             }
             catch { }
@@ -98,7 +98,7 @@ namespace Dusty_Easel
             try
             {
                 canvas.SetPixel(pixel.X, pixel.Y, Color.Transparent);
-                _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
+                _easel.Image = Features.ApplyZoom(canvas, scaleFactor, _easel);
                 _easel.Invalidate();
             }
             catch { }
@@ -129,18 +129,20 @@ namespace Dusty_Easel
         public void SaveAsPNG(string filePath)
         {
             canvas.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
+            Features.saveTXTatSystemFiles("LastFiles", 3, filePath);
+
         }
 
         public void OpenImage(string filePath)
         {
             canvas = new Bitmap(filePath);
-            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
+            _easel.Image = Features.ApplyZoom(canvas, scaleFactor, _easel);
         }
 
         public void NewBitmap(int Height, int Width)
         {
             canvas = new Bitmap(Width, Height);
-            _easel.Image = gr.ApplyZoom(canvas, scaleFactor, _easel);
+            _easel.Image = Features.ApplyZoom(canvas, scaleFactor, _easel);
         }
     }
 }
