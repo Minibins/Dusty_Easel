@@ -56,7 +56,7 @@
     </Compile>
     <Compile Include="GetPixel.cs" />
     <Compile Include="Features.cs" />
-    <Compile Include="LoadImage.cs" />
+    <Compile Include="DocumentManager.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

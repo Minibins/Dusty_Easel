@@ -7,7 +7,7 @@ namespace Dusty_Easel
 {
     public class Drawing
     {
-        private GetPixel getPixel;
+        
         private Bitmap canvas;
         private Graphics g;
         private bool paint;
@@ -16,7 +16,7 @@ namespace Dusty_Easel
         public Color brushColor = Color.Black;
         private DrawingTool usingBrush = DrawingTool.Pencil;
         private PictureBox _easel;
-       
+        private Form1 form;
         private enum DrawingTool
         {
             Pencil,
@@ -28,12 +28,12 @@ namespace Dusty_Easel
             scaleFactor = Math.Min(Math.Max(scaleFactor, 0.5f), 10);
             _easel.Image = Features.ApplyZoom(canvas, scaleFactor, _easel);
         }
-        public Drawing(PictureBox easel)
+        public Drawing(PictureBox easel, Form1 form1)
         {
-            
+            form = form1;
             _easel = easel;
             InitializeCanvas();
-            getPixel = new GetPixel();
+           
         }
 
         private void InitializeCanvas()
@@ -61,8 +61,8 @@ namespace Dusty_Easel
             }
             catch { }
         }
-
        
+
 
         public void easel_MouseDown(MouseEventArgs e)
         {
@@ -122,7 +122,7 @@ namespace Dusty_Easel
 
         public void Palette_MouseClick(MouseEventArgs e, PictureBox Palette, PictureBox ColorNow)
         {
-            brushColor = getPixel.GetPixelColor(Palette, e);
+            brushColor = Features.GetPixelColor(Palette, e);
             ColorNow.BackColor = brushColor;
         }
 

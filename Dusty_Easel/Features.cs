@@ -7,6 +7,7 @@ namespace Dusty_Easel
 {
     static class Features
     {
+       
         public static Bitmap ApplyZoom(Bitmap canvas, float scaleFactor, Bitmap _easel)//Перезагрузка с картинкой в качестве цели
         {
             int newWidth = (int)(canvas.Width * scaleFactor);
@@ -82,9 +83,7 @@ namespace Dusty_Easel
             {
                 for (int y = 0; y < sourceImage.Height; y++)
                 {
-                    Color pixelColor = sourceImage.GetPixel(x, y);
-
-                    if (pixelColor == targetColor)
+                    if (isThatColor(targetColor,sourceImage,x,y))
                     {
                         // Обновляем границы области
                         minX = Math.Min(minX, x);
@@ -154,6 +153,22 @@ namespace Dusty_Easel
                
             }
         }
+        public static Color GetPixelColor(PictureBox Image, MouseEventArgs e)
+        {
+            Bitmap image = (Bitmap)Image.Image;
 
+            if (e.X >= 0 && e.X < image.Width && e.Y >= 0 && e.Y < image.Height)
+            {
+                Color pixelColor = image.GetPixel(e.X, e.Y);
+                return pixelColor;
+            }
+
+            return Color.Empty;
+        }
+        public static bool isThatColor(Color c, Bitmap b, int x,int y) 
+        {
+            return b.GetPixel(x,y) == c;
+        }
+        
     }
 }

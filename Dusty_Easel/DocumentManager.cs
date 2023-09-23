@@ -4,9 +4,10 @@ using System.Windows.Forms;
 
 namespace Dusty_Easel
 {
-    public class LoadImage
+    public static class DocumentManager
     {
-        public void loadImage(PictureBox image)
+        public static Form1 form;
+        public static void loadImage(PictureBox image)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -26,6 +27,10 @@ namespace Dusty_Easel
                 }
             }
         }
-        
+        private static void newTab()
+        {
+           
+            form.tabs.TabPages.Add(tabPage1);
+        }
     }
 }

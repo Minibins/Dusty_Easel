@@ -4,16 +4,18 @@ using System.Windows.Forms;
 
 namespace Dusty_Easel
 {
-    public partial class Form1 : Form
+    public partial  class Form1 : Form
     {
-        private LoadImage loadImage;
+        private DocumentManager loadImage;
         private MainMenu menu;
         private Drawing drawing;
+        
         public Form1()
         {
+            Features.form = this;
             InitializeComponent();
-            loadImage = new LoadImage();
-            drawing = new Drawing(easel);
+            loadImage = new DocumentManager();
+            drawing = new Drawing(easel,this);
             menu = new MainMenu(Menu);
         }
 
@@ -95,12 +97,12 @@ namespace Dusty_Easel
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NewBitmap.Visible = true;
-            Main.Visible = false;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Main.Visible = true;
+            Features.newImage();
             drawing.NewBitmap(Convert.ToInt32(Height.Text), Convert.ToInt32(Width.Text));
             NewBitmap.Visible = false;
         }
@@ -127,5 +129,6 @@ namespace Dusty_Easel
         {
             menu.MenuBackground(e);
         }
+        
     }
 }

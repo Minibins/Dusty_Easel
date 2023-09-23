@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Palette = new System.Windows.Forms.PictureBox();
+            this.ColorNow = new System.Windows.Forms.PictureBox();
             this.loadPalette = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.eraserButton = new System.Windows.Forms.Button();
@@ -44,40 +46,66 @@
             this.Height = new System.Windows.Forms.TextBox();
             this.Width = new System.Windows.Forms.TextBox();
             this.Main = new System.Windows.Forms.Panel();
+            this.tabs = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.Menu = new System.Windows.Forms.PictureBox();
-            this.Palette = new System.Windows.Forms.PictureBox();
-            this.ColorNow = new System.Windows.Forms.PictureBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.easel = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Palette)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorNow)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.NewBitmap.SuspendLayout();
             this.Main.SuspendLayout();
+            this.tabs.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Palette)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ColorNow)).BeginInit();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.easel)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.Palette);
             this.panel1.Controls.Add(this.ColorNow);
             this.panel1.Controls.Add(this.loadPalette);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 426);
+            this.panel1.Size = new System.Drawing.Size(151, 387);
             this.panel1.TabIndex = 1;
+            // 
+            // Palette
+            // 
+            this.Palette.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Palette.Location = new System.Drawing.Point(-1, -3);
+            this.Palette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Palette.Name = "Palette";
+            this.Palette.Size = new System.Drawing.Size(151, 331);
+            this.Palette.TabIndex = 2;
+            this.Palette.TabStop = false;
+            this.Palette.Click += new System.EventHandler(this.Palette_Click);
+            this.Palette.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Palette_MouseClick);
+            // 
+            // ColorNow
+            // 
+            this.ColorNow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ColorNow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ColorNow.Location = new System.Drawing.Point(9, 296);
+            this.ColorNow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ColorNow.Name = "ColorNow";
+            this.ColorNow.Size = new System.Drawing.Size(126, 36);
+            this.ColorNow.TabIndex = 1;
+            this.ColorNow.TabStop = false;
             // 
             // loadPalette
             // 
             this.loadPalette.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.loadPalette.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.loadPalette.Location = new System.Drawing.Point(9, 378);
+            this.loadPalette.Location = new System.Drawing.Point(9, 339);
             this.loadPalette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.loadPalette.Name = "loadPalette";
             this.loadPalette.Size = new System.Drawing.Size(125, 38);
@@ -88,22 +116,21 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.eraserButton);
             this.panel2.Controls.Add(this.pencilButton);
-            this.panel2.Location = new System.Drawing.Point(668, 2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(661, 3);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(129, 426);
+            this.panel2.Size = new System.Drawing.Size(128, 387);
             this.panel2.TabIndex = 2;
             // 
             // eraserButton
             // 
             this.eraserButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.eraserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.eraserButton.Location = new System.Drawing.Point(11, 59);
+            this.eraserButton.Location = new System.Drawing.Point(10, 59);
             this.eraserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.eraserButton.Name = "eraserButton";
             this.eraserButton.Size = new System.Drawing.Size(115, 39);
@@ -116,7 +143,7 @@
             // 
             this.pencilButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pencilButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.pencilButton.Location = new System.Drawing.Point(11, 14);
+            this.pencilButton.Location = new System.Drawing.Point(10, 14);
             this.pencilButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pencilButton.Name = "pencilButton";
             this.pencilButton.Size = new System.Drawing.Size(115, 39);
@@ -133,7 +160,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,7 +172,7 @@
             this.saveToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -220,65 +247,69 @@
             // 
             // Main
             // 
-            this.Main.Controls.Add(this.Menu);
-            this.Main.Controls.Add(this.panel2);
-            this.Main.Controls.Add(this.panel1);
-            this.Main.Controls.Add(this.easel);
+            this.Main.Controls.Add(this.tabs);
             this.Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main.Location = new System.Drawing.Point(0, 30);
+            this.Main.Location = new System.Drawing.Point(0, 28);
             this.Main.Margin = new System.Windows.Forms.Padding(4);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(800, 420);
+            this.Main.Size = new System.Drawing.Size(800, 422);
             this.Main.TabIndex = 5;
-            this.Main.Visible = false;
+            // 
+            // tabs
+            // 
+            this.tabs.Controls.Add(this.tabPage2);
+            this.tabs.Controls.Add(this.tabPage1);
+            this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabs.Location = new System.Drawing.Point(0, 0);
+            this.tabs.Name = "tabs";
+            this.tabs.SelectedIndex = 0;
+            this.tabs.Size = new System.Drawing.Size(800, 422);
+            this.tabs.TabIndex = 6;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.Menu);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(792, 393);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 
             this.Menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu.Image = global::Dusty_Easel.Properties.Resources.background;
-            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Location = new System.Drawing.Point(3, 3);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(800, 420);
+            this.Menu.Size = new System.Drawing.Size(786, 387);
             this.Menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Menu.TabIndex = 3;
             this.Menu.TabStop = false;
             this.Menu.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Menu_MouseMove);
             // 
-            // Palette
+            // tabPage1
             // 
-            this.Palette.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.Palette.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Palette.Location = new System.Drawing.Point(3, -3);
-            this.Palette.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Palette.Name = "Palette";
-            this.Palette.Size = new System.Drawing.Size(149, 331);
-            this.Palette.TabIndex = 2;
-            this.Palette.TabStop = false;
-            this.Palette.Click += new System.EventHandler(this.Palette_Click);
-            this.Palette.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Palette_MouseClick);
-            // 
-            // ColorNow
-            // 
-            this.ColorNow.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ColorNow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ColorNow.Location = new System.Drawing.Point(9, 335);
-            this.ColorNow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ColorNow.Name = "ColorNow";
-            this.ColorNow.Size = new System.Drawing.Size(126, 36);
-            this.ColorNow.TabIndex = 1;
-            this.ColorNow.TabStop = false;
+            this.tabPage1.Controls.Add(this.easel);
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(792, 393);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // easel
             // 
-            this.easel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.easel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.easel.Location = new System.Drawing.Point(157, 48);
+            this.easel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.easel.Location = new System.Drawing.Point(154, 3);
             this.easel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.easel.Name = "easel";
-            this.easel.Size = new System.Drawing.Size(505, 380);
+            this.easel.Size = new System.Drawing.Size(507, 387);
             this.easel.TabIndex = 0;
             this.easel.TabStop = false;
             this.easel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.easel_MouseDown);
@@ -298,15 +329,18 @@
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown_1);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Palette)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorNow)).EndInit();
             this.panel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.NewBitmap.ResumeLayout(false);
             this.NewBitmap.PerformLayout();
             this.Main.ResumeLayout(false);
+            this.tabs.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Menu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Palette)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ColorNow)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.easel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -335,6 +369,9 @@
         private System.Windows.Forms.TextBox Width;
         private System.Windows.Forms.Panel Main;
         private System.Windows.Forms.PictureBox Menu;
+        public System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.TabControl tabs;
     }
 }
 
