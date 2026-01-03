@@ -1,0 +1,848 @@
+{
+  "version": 3,
+  "targets": {
+    "net10.0": {
+      "ImGui.NET/1.91.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ImGui.NET.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libcimgui.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/libcimgui.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-arm64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/cimgui.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenTK/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Audio": "5.0.0-pre.15",
+          "OpenTK.Compute": "5.0.0-pre.15",
+          "OpenTK.Core": "5.0.0-pre.15",
+          "OpenTK.Graphics": "5.0.0-pre.15",
+          "OpenTK.Input": "5.0.0-pre.15",
+          "OpenTK.Mathematics": "5.0.0-pre.15",
+          "OpenTK.Platform": "5.0.0-pre.15",
+          "OpenTK.Windowing.Common": "5.0.0-pre.15",
+          "OpenTK.Windowing.Desktop": "5.0.0-pre.15",
+          "OpenTK.Windowing.GraphicsLibraryFramework": "5.0.0-pre.15"
+        }
+      },
+      "OpenTK.Audio/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Core": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Mathematics": "[5.0.0-pre.15, 6.0.0-pre)"
+        },
+        "compile": {
+          "lib/net8.0/OpenTK.Audio.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Audio.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Compute/5.0.0-pre.15": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenTK.Compute.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Compute.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Core/5.0.0-pre.15": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenTK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Graphics/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Core": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Mathematics": "[5.0.0-pre.15, 6.0.0-pre)"
+        },
+        "compile": {
+          "lib/net8.0/OpenTK.Graphics.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Graphics.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "OpenTK.Input/5.0.0-pre.15": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenTK.Input.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Input.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Mathematics/5.0.0-pre.15": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenTK.Mathematics.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Mathematics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Platform/5.0.0-pre.15": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/OpenTK.Platform.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Platform.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.redist.glfw/3.4.0.44": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libglfw.so.3": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-arm64/native/libglfw.3.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
+          "runtimes/osx-x64/native/libglfw.3.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/glfw3.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/glfw3.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenTK.Windowing.Common/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Core": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Mathematics": "[5.0.0-pre.15, 6.0.0-pre)"
+        },
+        "compile": {
+          "lib/net8.0/OpenTK.Windowing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Windowing.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Windowing.Desktop/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Core": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Mathematics": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Windowing.Common": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.Windowing.GraphicsLibraryFramework": "[5.0.0-pre.15, 6.0.0-pre)"
+        },
+        "compile": {
+          "lib/net8.0/OpenTK.Windowing.Desktop.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Windowing.Desktop.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.Windowing.GraphicsLibraryFramework/5.0.0-pre.15": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK.Core": "[5.0.0-pre.15, 6.0.0-pre)",
+          "OpenTK.redist.glfw": "3.4.0.44"
+        },
+        "compile": {
+          "lib/net8.0/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/OpenTK.Windowing.GraphicsLibraryFramework.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/3.1.12": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ImGui.NET/1.91.6.1": {
+      "sha512": "Ph3j8pO6UM28PPJWP+5LEJSPVPkd8ivpVS8tRyY9b0IHn1HDIrMZ2o/FdiXaYW6YhNxMHmbevw6Jcfs+IDKi0Q==",
+      "type": "package",
+      "path": "imgui.net/1.91.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net40/ImGui.NET.targets",
+        "imgui.net.1.91.6.1.nupkg.sha512",
+        "imgui.net.nuspec",
+        "lib/net6.0/ImGui.NET.dll",
+        "lib/net6.0/ImGui.NET.xml",
+        "lib/net8.0/ImGui.NET.dll",
+        "lib/net8.0/ImGui.NET.xml",
+        "lib/netstandard2.0/ImGui.NET.dll",
+        "lib/netstandard2.0/ImGui.NET.xml",
+        "runtimes/linux-x64/native/libcimgui.so",
+        "runtimes/osx/native/libcimgui.dylib",
+        "runtimes/win-arm64/native/cimgui.dll",
+        "runtimes/win-x64/native/cimgui.dll",
+        "runtimes/win-x86/native/cimgui.dll"
+      ]
+    },
+    "OpenTK/5.0.0-pre.15": {
+      "sha512": "CDGbelIIaGCBNPekNqh/zQsy63q+PTrVOWWWi7A3d/QrHVd0T5nDhSqqJpD77Xs/qHFRDhL1C3+Qh5CDYJyzig==",
+      "type": "package",
+      "path": "opentk/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "opentk.5.0.0-pre.15.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenTK.Audio/5.0.0-pre.15": {
+      "sha512": "lX3FR1RvXz+xjEGl5MFvGWQg7M/z4qdeHB6vdI5F1K1ODyjeuDlSnEc7hjA9fSdmKKEq3K1yCcU4kGgs4UC0ZQ==",
+      "type": "package",
+      "path": "opentk.audio/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Audio.dll",
+        "lib/net8.0/OpenTK.Audio.pdb",
+        "lib/net8.0/OpenTK.Audio.xml",
+        "opentk.audio.5.0.0-pre.15.nupkg.sha512",
+        "opentk.audio.nuspec"
+      ]
+    },
+    "OpenTK.Compute/5.0.0-pre.15": {
+      "sha512": "uaT2JJGUEvlLYwKga5/cxAm7LiFdRKPjpWPE6tnhg2fYzHwX/6WfVCXU9xvYRLUqYHZIU7dYzJOzlXFZuDZNAw==",
+      "type": "package",
+      "path": "opentk.compute/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Compute.dll",
+        "lib/net8.0/OpenTK.Compute.pdb",
+        "lib/net8.0/OpenTK.Compute.xml",
+        "opentk.compute.5.0.0-pre.15.nupkg.sha512",
+        "opentk.compute.nuspec"
+      ]
+    },
+    "OpenTK.Core/5.0.0-pre.15": {
+      "sha512": "Y/sir5MXEoGB9b4bmCSXknEtjbBIoqaRaeW5XnhIvY8FWBEsxT21jqq5zF1/TXjyCdcNkcfzPq70T6P4FYE5uQ==",
+      "type": "package",
+      "path": "opentk.core/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Core.dll",
+        "lib/net8.0/OpenTK.Core.pdb",
+        "lib/net8.0/OpenTK.Core.xml",
+        "opentk.core.5.0.0-pre.15.nupkg.sha512",
+        "opentk.core.nuspec"
+      ]
+    },
+    "OpenTK.Graphics/5.0.0-pre.15": {
+      "sha512": "0oobd6dbdmKazMiBtiExv8hzlcJIxkEAD/ozyGX2T0WYPCMv0iZXRqqFl/qJ+18tfhIGoQ7USIp5Sw9ZxhDgjA==",
+      "type": "package",
+      "path": "opentk.graphics/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Graphics.dll",
+        "lib/net8.0/OpenTK.Graphics.pdb",
+        "opentk.graphics.5.0.0-pre.15.nupkg.sha512",
+        "opentk.graphics.nuspec"
+      ]
+    },
+    "OpenTK.Input/5.0.0-pre.15": {
+      "sha512": "O30U9gMveJW6bYPxxC7nYZVoViwlxpImMnIuWywcd1JnUfvScgDlWFwhPO7xBdaPu8FYa29N0yBRsl5eJufPcg==",
+      "type": "package",
+      "path": "opentk.input/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Input.dll",
+        "lib/net8.0/OpenTK.Input.pdb",
+        "lib/net8.0/OpenTK.Input.xml",
+        "opentk.input.5.0.0-pre.15.nupkg.sha512",
+        "opentk.input.nuspec"
+      ]
+    },
+    "OpenTK.Mathematics/5.0.0-pre.15": {
+      "sha512": "JFflFJNMLV0E/08bqsnzNXU/aUJJwy8xCZVU1ECMFvi1lKoCXi/FHSLJKW+s+p+bbTZ6HpPzdc+o4TBerecrjQ==",
+      "type": "package",
+      "path": "opentk.mathematics/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Mathematics.dll",
+        "lib/net8.0/OpenTK.Mathematics.pdb",
+        "lib/net8.0/OpenTK.Mathematics.xml",
+        "opentk.mathematics.5.0.0-pre.15.nupkg.sha512",
+        "opentk.mathematics.nuspec"
+      ]
+    },
+    "OpenTK.Platform/5.0.0-pre.15": {
+      "sha512": "5GCXACJm8ybTrumj2jb7c5oGNQyb/LwWCNbJsl72IeY/miBTMBPXM0RD8oXBXd/oH36pKz5EwzaRl/MT6/WajA==",
+      "type": "package",
+      "path": "opentk.platform/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/OpenTK.Platform.dll",
+        "lib/net8.0/OpenTK.Platform.pdb",
+        "lib/net8.0/OpenTK.Platform.xml",
+        "opentk.platform.5.0.0-pre.15.nupkg.sha512",
+        "opentk.platform.nuspec"
+      ]
+    },
+    "OpenTK.redist.glfw/3.4.0.44": {
+      "sha512": "HEjbdk0wWxSRrXHl3DSmrA8trecndgJpAHHloJJ1vPseNfeu/ynmrH/LturU1KguRn4r3IzZ81UIp5xRjnyahg==",
+      "type": "package",
+      "path": "opentk.redist.glfw/3.4.0.44",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "COPYING.md",
+        "lib/netstandard2.0/_._",
+        "opentk.png",
+        "opentk.redist.glfw.3.4.0.44.nupkg.sha512",
+        "opentk.redist.glfw.nuspec",
+        "runtimes/linux-x64/native/libglfw.so.3",
+        "runtimes/osx-arm64/native/libglfw.3.dylib",
+        "runtimes/osx-x64/native/libglfw.3.dylib",
+        "runtimes/win-x64/native/glfw3.dll",
+        "runtimes/win-x86/native/glfw3.dll"
+      ]
+    },
+    "OpenTK.Windowing.Common/5.0.0-pre.15": {
+      "sha512": "wPoz4uW8f3/zNHFVSWgMQPx5yhzUBKlpwdJp5PDiemZyO63tBJKaaty3TIJakDDdG/TioSIjnQb0YY1tEBkjuA==",
+      "type": "package",
+      "path": "opentk.windowing.common/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Windowing.Common.dll",
+        "lib/net8.0/OpenTK.Windowing.Common.pdb",
+        "lib/net8.0/OpenTK.Windowing.Common.xml",
+        "opentk.windowing.common.5.0.0-pre.15.nupkg.sha512",
+        "opentk.windowing.common.nuspec"
+      ]
+    },
+    "OpenTK.Windowing.Desktop/5.0.0-pre.15": {
+      "sha512": "Er5s+lSp5VwJ5NzrSjRMmhBpZdVGEFswuIE+joGtTUtIzznws6/Owi30tBaAC/byHHPrgH5hGegwlvEP5rDKRA==",
+      "type": "package",
+      "path": "opentk.windowing.desktop/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Windowing.Desktop.dll",
+        "lib/net8.0/OpenTK.Windowing.Desktop.pdb",
+        "lib/net8.0/OpenTK.Windowing.Desktop.xml",
+        "opentk.windowing.desktop.5.0.0-pre.15.nupkg.sha512",
+        "opentk.windowing.desktop.nuspec"
+      ]
+    },
+    "OpenTK.Windowing.GraphicsLibraryFramework/5.0.0-pre.15": {
+      "sha512": "o+t3c2tFiNpqkvTZ1tKw+Anjm76t+OvkiBVHUuSQ5WMBI/O+uzpZYEl0pdSRDpL3UT3udJkM8iefIqK2+YzAxA==",
+      "type": "package",
+      "path": "opentk.windowing.graphicslibraryframework/5.0.0-pre.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "docs/README.md",
+        "images/opentk-blue-hexagon.png",
+        "lib/net8.0/OpenTK.Windowing.GraphicsLibraryFramework.dll",
+        "lib/net8.0/OpenTK.Windowing.GraphicsLibraryFramework.pdb",
+        "lib/net8.0/OpenTK.Windowing.GraphicsLibraryFramework.xml",
+        "opentk.windowing.graphicslibraryframework.5.0.0-pre.15.nupkg.sha512",
+        "opentk.windowing.graphicslibraryframework.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/3.1.12": {
+      "sha512": "iAg6zifihXEFS/t7fiHhZBGAdCp3FavsF4i2ZIDp0JfeYeDVzvmlbY1CNhhIKimaIzrzSi5M/NBFcWvZT2rB/A==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/3.1.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.3.1.12.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net10.0": [
+      "ImGui.NET >= 1.91.6.1",
+      "OpenTK >= 5.0.0-pre.15",
+      "SixLabors.ImageSharp >= 3.1.12"
+    ]
+  },
+  "packageFolders": {
+    "/home/maksym/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/maksym/Projects/Dusty_Easel/Dusty_Easel/Dusty_Easel.csproj",
+      "projectName": "Dusty_Easel",
+      "projectPath": "/home/maksym/Projects/Dusty_Easel/Dusty_Easel/Dusty_Easel.csproj",
+      "packagesPath": "/home/maksym/.nuget/packages/",
+      "outputPath": "/home/maksym/Projects/Dusty_Easel/Dusty_Easel/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/maksym/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net10.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net10.0": {
+          "targetAlias": "net10.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net10.0": {
+        "targetAlias": "net10.0",
+        "dependencies": {
+          "ImGui.NET": {
+            "target": "Package",
+            "version": "[1.91.6.1, )"
+          },
+          "OpenTK": {
+            "target": "Package",
+            "version": "[5.0.0-pre.15, )"
+          },
+          "SixLabors.ImageSharp": {
+            "target": "Package",
+            "version": "[3.1.12, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[10.0.0, 10.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
+        "packagesToPrune": {
+          "Microsoft.CSharp": "(,4.7.32767]",
+          "Microsoft.VisualBasic": "(,10.4.32767]",
+          "Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "Microsoft.Win32.Registry": "(,5.0.32767]",
+          "runtime.any.System.Collections": "(,4.3.32767]",
+          "runtime.any.System.Diagnostics.Tools": "(,4.3.32767]",
+          "runtime.any.System.Diagnostics.Tracing": "(,4.3.32767]",
+          "runtime.any.System.Globalization": "(,4.3.32767]",
+          "runtime.any.System.Globalization.Calendars": "(,4.3.32767]",
+          "runtime.any.System.IO": "(,4.3.32767]",
+          "runtime.any.System.Reflection": "(,4.3.32767]",
+          "runtime.any.System.Reflection.Extensions": "(,4.3.32767]",
+          "runtime.any.System.Reflection.Primitives": "(,4.3.32767]",
+          "runtime.any.System.Resources.ResourceManager": "(,4.3.32767]",
+          "runtime.any.System.Runtime": "(,4.3.32767]",
+          "runtime.any.System.Runtime.Handles": "(,4.3.32767]",
+          "runtime.any.System.Runtime.InteropServices": "(,4.3.32767]",
+          "runtime.any.System.Text.Encoding": "(,4.3.32767]",
+          "runtime.any.System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "runtime.any.System.Threading.Tasks": "(,4.3.32767]",
+          "runtime.any.System.Threading.Timer": "(,4.3.32767]",
+          "runtime.aot.System.Collections": "(,4.3.32767]",
+          "runtime.aot.System.Diagnostics.Tools": "(,4.3.32767]",
+          "runtime.aot.System.Diagnostics.Tracing": "(,4.3.32767]",
+          "runtime.aot.System.Globalization": "(,4.3.32767]",
+          "runtime.aot.System.Globalization.Calendars": "(,4.3.32767]",
+          "runtime.aot.System.IO": "(,4.3.32767]",
+          "runtime.aot.System.Reflection": "(,4.3.32767]",
+          "runtime.aot.System.Reflection.Extensions": "(,4.3.32767]",
+          "runtime.aot.System.Reflection.Primitives": "(,4.3.32767]",
+          "runtime.aot.System.Resources.ResourceManager": "(,4.3.32767]",
+          "runtime.aot.System.Runtime": "(,4.3.32767]",
+          "runtime.aot.System.Runtime.Handles": "(,4.3.32767]",
+          "runtime.aot.System.Runtime.InteropServices": "(,4.3.32767]",
+          "runtime.aot.System.Text.Encoding": "(,4.3.32767]",
+          "runtime.aot.System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "runtime.aot.System.Threading.Tasks": "(,4.3.32767]",
+          "runtime.aot.System.Threading.Timer": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.debian.9-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.27-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.fedora.28-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.opensuse.42.3-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple": "(,4.3.32767]",
+          "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography": "(,4.3.32767]",
+          "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.Net.Http": "(,4.3.32767]",
+          "runtime.ubuntu.18.04-x64.runtime.native.System.Net.Security": "(,4.3.32767]",
+          "runtime.unix.Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "runtime.unix.System.Console": "(,4.3.32767]",
+          "runtime.unix.System.Diagnostics.Debug": "(,4.3.32767]",
+          "runtime.unix.System.IO.FileSystem": "(,4.3.32767]",
+          "runtime.unix.System.Net.Primitives": "(,4.3.32767]",
+          "runtime.unix.System.Net.Sockets": "(,4.3.32767]",
+          "runtime.unix.System.Private.Uri": "(,4.3.32767]",
+          "runtime.unix.System.Runtime.Extensions": "(,4.3.32767]",
+          "runtime.win.Microsoft.Win32.Primitives": "(,4.3.32767]",
+          "runtime.win.System.Console": "(,4.3.32767]",
+          "runtime.win.System.Diagnostics.Debug": "(,4.3.32767]",
+          "runtime.win.System.IO.FileSystem": "(,4.3.32767]",
+          "runtime.win.System.Net.Primitives": "(,4.3.32767]",
+          "runtime.win.System.Net.Sockets": "(,4.3.32767]",
+          "runtime.win.System.Runtime.Extensions": "(,4.3.32767]",
+          "runtime.win10-arm-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win10-arm64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win10-x64-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win10-x86-aot.runtime.native.System.IO.Compression": "(,4.0.32767]",
+          "runtime.win7-x64.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win7-x86.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "runtime.win7.System.Private.Uri": "(,4.3.32767]",
+          "runtime.win8-arm.runtime.native.System.IO.Compression": "(,4.3.32767]",
+          "System.AppContext": "(,4.3.32767]",
+          "System.Buffers": "(,5.0.32767]",
+          "System.Collections": "(,4.3.32767]",
+          "System.Collections.Concurrent": "(,4.3.32767]",
+          "System.Collections.Immutable": "(,10.0.32767]",
+          "System.Collections.NonGeneric": "(,4.3.32767]",
+          "System.Collections.Specialized": "(,4.3.32767]",
+          "System.ComponentModel": "(,4.3.32767]",
+          "System.ComponentModel.Annotations": "(,4.3.32767]",
+          "System.ComponentModel.EventBasedAsync": "(,4.3.32767]",
+          "System.ComponentModel.Primitives": "(,4.3.32767]",
+          "System.ComponentModel.TypeConverter": "(,4.3.32767]",
+          "System.Console": "(,4.3.32767]",
+          "System.Data.Common": "(,4.3.32767]",
+          "System.Data.DataSetExtensions": "(,4.4.32767]",
+          "System.Diagnostics.Contracts": "(,4.3.32767]",
+          "System.Diagnostics.Debug": "(,4.3.32767]",
+          "System.Diagnostics.DiagnosticSource": "(,10.0.32767]",
+          "System.Diagnostics.FileVersionInfo": "(,4.3.32767]",
+          "System.Diagnostics.Process": "(,4.3.32767]",
+          "System.Diagnostics.StackTrace": "(,4.3.32767]",
+          "System.Diagnostics.TextWriterTraceListener": "(,4.3.32767]",
+          "System.Diagnostics.Tools": "(,4.3.32767]",
+          "System.Diagnostics.TraceSource": "(,4.3.32767]",
+          "System.Diagnostics.Tracing": "(,4.3.32767]",
+          "System.Drawing.Primitives": "(,4.3.32767]",
+          "System.Dynamic.Runtime": "(,4.3.32767]",
+          "System.Formats.Asn1": "(,10.0.32767]",
+          "System.Formats.Tar": "(,10.0.32767]",
+          "System.Globalization": "(,4.3.32767]",
+          "System.Globalization.Calendars": "(,4.3.32767]",
+          "System.Globalization.Extensions": "(,4.3.32767]",
+          "System.IO": "(,4.3.32767]",
+          "System.IO.Compression": "(,4.3.32767]",
+          "System.IO.Compression.ZipFile": "(,4.3.32767]",
+          "System.IO.FileSystem": "(,4.3.32767]",
+          "System.IO.FileSystem.AccessControl": "(,4.4.32767]",
+          "System.IO.FileSystem.DriveInfo": "(,4.3.32767]",
+          "System.IO.FileSystem.Primitives": "(,4.3.32767]",
+          "System.IO.FileSystem.Watcher": "(,4.3.32767]",
+          "System.IO.IsolatedStorage": "(,4.3.32767]",
+          "System.IO.MemoryMappedFiles": "(,4.3.32767]",
+          "System.IO.Pipelines": "(,10.0.32767]",
+          "System.IO.Pipes": "(,4.3.32767]",
+          "System.IO.Pipes.AccessControl": "(,5.0.32767]",
+          "System.IO.UnmanagedMemoryStream": "(,4.3.32767]",
+          "System.Linq": "(,4.3.32767]",
+          "System.Linq.AsyncEnumerable": "(,10.0.32767]",
+          "System.Linq.Expressions": "(,4.3.32767]",
+          "System.Linq.Parallel": "(,4.3.32767]",
+          "System.Linq.Queryable": "(,4.3.32767]",
+          "System.Memory": "(,5.0.32767]",
+          "System.Net.Http": "(,4.3.32767]",
+          "System.Net.Http.Json": "(,10.0.32767]",
+          "System.Net.NameResolution": "(,4.3.32767]",
+          "System.Net.NetworkInformation": "(,4.3.32767]",
+          "System.Net.Ping": "(,4.3.32767]",
+          "System.Net.Primitives": "(,4.3.32767]",
+          "System.Net.Requests": "(,4.3.32767]",
+          "System.Net.Security": "(,4.3.32767]",
+          "System.Net.ServerSentEvents": "(,10.0.32767]",
+          "System.Net.Sockets": "(,4.3.32767]",
+          "System.Net.WebHeaderCollection": "(,4.3.32767]",
+          "System.Net.WebSockets": "(,4.3.32767]",
+          "System.Net.WebSockets.Client": "(,4.3.32767]",
+          "System.Numerics.Vectors": "(,5.0.32767]",
+          "System.ObjectModel": "(,4.3.32767]",
+          "System.Private.DataContractSerialization": "(,4.3.32767]",
+          "System.Private.Uri": "(,4.3.32767]",
+          "System.Reflection": "(,4.3.32767]",
+          "System.Reflection.DispatchProxy": "(,6.0.32767]",
+          "System.Reflection.Emit": "(,4.7.32767]",
+          "System.Reflection.Emit.ILGeneration": "(,4.7.32767]",
+          "System.Reflection.Emit.Lightweight": "(,4.7.32767]",
+          "System.Reflection.Extensions": "(,4.3.32767]",
+          "System.Reflection.Metadata": "(,10.0.32767]",
+          "System.Reflection.Primitives": "(,4.3.32767]",
+          "System.Reflection.TypeExtensions": "(,4.3.32767]",
+          "System.Resources.Reader": "(,4.3.32767]",
+          "System.Resources.ResourceManager": "(,4.3.32767]",
+          "System.Resources.Writer": "(,4.3.32767]",
+          "System.Runtime": "(,4.3.32767]",
+          "System.Runtime.CompilerServices.Unsafe": "(,7.0.32767]",
+          "System.Runtime.CompilerServices.VisualC": "(,4.3.32767]",
+          "System.Runtime.Extensions": "(,4.3.32767]",
+          "System.Runtime.Handles": "(,4.3.32767]",
+          "System.Runtime.InteropServices": "(,4.3.32767]",
+          "System.Runtime.InteropServices.RuntimeInformation": "(,4.3.32767]",
+          "System.Runtime.Loader": "(,4.3.32767]",
+          "System.Runtime.Numerics": "(,4.3.32767]",
+          "System.Runtime.Serialization.Formatters": "(,4.3.32767]",
+          "System.Runtime.Serialization.Json": "(,4.3.32767]",
+          "System.Runtime.Serialization.Primitives": "(,4.3.32767]",
+          "System.Runtime.Serialization.Xml": "(,4.3.32767]",
+          "System.Security.AccessControl": "(,6.0.32767]",
+          "System.Security.Claims": "(,4.3.32767]",
+          "System.Security.Cryptography.Algorithms": "(,4.3.32767]",
+          "System.Security.Cryptography.Cng": "(,5.0.32767]",
+          "System.Security.Cryptography.Csp": "(,4.3.32767]",
+          "System.Security.Cryptography.Encoding": "(,4.3.32767]",
+          "System.Security.Cryptography.OpenSsl": "(,5.0.32767]",
+          "System.Security.Cryptography.Primitives": "(,4.3.32767]",
+          "System.Security.Cryptography.X509Certificates": "(,4.3.32767]",
+          "System.Security.Principal": "(,4.3.32767]",
+          "System.Security.Principal.Windows": "(,5.0.32767]",
+          "System.Security.SecureString": "(,4.3.32767]",
+          "System.Text.Encoding": "(,4.3.32767]",
+          "System.Text.Encoding.CodePages": "(,10.0.32767]",
+          "System.Text.Encoding.Extensions": "(,4.3.32767]",
+          "System.Text.Encodings.Web": "(,10.0.32767]",
+          "System.Text.Json": "(,10.0.32767]",
+          "System.Text.RegularExpressions": "(,4.3.32767]",
+          "System.Threading": "(,4.3.32767]",
+          "System.Threading.AccessControl": "(,10.0.32767]",
+          "System.Threading.Channels": "(,10.0.32767]",
+          "System.Threading.Overlapped": "(,4.3.32767]",
+          "System.Threading.Tasks": "(,4.3.32767]",
+          "System.Threading.Tasks.Dataflow": "(,10.0.32767]",
+          "System.Threading.Tasks.Extensions": "(,5.0.32767]",
+          "System.Threading.Tasks.Parallel": "(,4.3.32767]",
+          "System.Threading.Thread": "(,4.3.32767]",
+          "System.Threading.ThreadPool": "(,4.3.32767]",
+          "System.Threading.Timer": "(,4.3.32767]",
+          "System.ValueTuple": "(,4.5.32767]",
+          "System.Xml.ReaderWriter": "(,4.3.32767]",
+          "System.Xml.XDocument": "(,4.3.32767]",
+          "System.Xml.XmlDocument": "(,4.3.32767]",
+          "System.Xml.XmlSerializer": "(,4.3.32767]",
+          "System.Xml.XPath": "(,4.3.32767]",
+          "System.Xml.XPath.XDocument": "(,5.0.32767]"
+        }
+      }
+    }
+  }
+}
