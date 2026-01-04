@@ -37,3 +37,15 @@
 /home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x64/native/glfw3.dll
 /home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x86/native/glfw3.dll
 /home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/SixLabors.ImageSharp.dll
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/NativeFileDialogSharp.dll
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/linux-x64/native/libnfd.so
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/osx-arm64/native/libnfd.dylib
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/osx-x64/native/libnfd.dylib
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x64/native/nfd.dll
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x64/native/nfd.exp
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x64/native/nfd.lib
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x64/native/nfd.pdb
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x86/native/nfd.dll
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x86/native/nfd.exp
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x86/native/nfd.lib
+/home/maksym/Projects/Dusty_Easel/Dusty_Easel/bin/Debug/net10.0/runtimes/win-x86/native/nfd.pdb

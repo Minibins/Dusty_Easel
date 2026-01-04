@@ -12,6 +12,24 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/maksym/.nuget/packages/" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)nativefiledialogsharp/0.6.0-alpha/contentFiles/any/netstandard2.0/nfd.dll" Condition="Exists('$(NuGetPackageRoot)nativefiledialogsharp/0.6.0-alpha/contentFiles/any/netstandard2.0/nfd.dll')">
+      <NuGetPackageId>NativeFileDialogSharp</NuGetPackageId>
+      <NuGetPackageVersion>0.6.0-alpha</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>nfd.dll</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)nativefiledialogsharp/0.6.0-alpha/contentFiles/any/netstandard2.0/nfd_x86.dll" Condition="Exists('$(NuGetPackageRoot)nativefiledialogsharp/0.6.0-alpha/contentFiles/any/netstandard2.0/nfd_x86.dll')">
+      <NuGetPackageId>NativeFileDialogSharp</NuGetPackageId>
+      <NuGetPackageVersion>0.6.0-alpha</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>nfd_x86.dll</Link>
+    </Content>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)sixlabors.imagesharp/3.1.12/build/SixLabors.ImageSharp.props" Condition="Exists('$(NuGetPackageRoot)sixlabors.imagesharp/3.1.12/build/SixLabors.ImageSharp.props')" />
   </ImportGroup>

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "t0uHjt6npSw=",
+  "dgSpecHash": "Nj1Ohpsknlk=",
   "success": true,
   "projectFilePath": "/home/maksym/Projects/Dusty_Easel/Dusty_Easel/Dusty_Easel.csproj",
   "expectedPackageFiles": [
     "/home/maksym/.nuget/packages/imgui.net/1.91.6.1/imgui.net.1.91.6.1.nupkg.sha512",
+    "/home/maksym/.nuget/packages/nativefiledialogsharp/0.6.0-alpha/nativefiledialogsharp.0.6.0-alpha.nupkg.sha512",
     "/home/maksym/.nuget/packages/opentk/5.0.0-pre.15/opentk.5.0.0-pre.15.nupkg.sha512",
     "/home/maksym/.nuget/packages/opentk.audio/5.0.0-pre.15/opentk.audio.5.0.0-pre.15.nupkg.sha512",
     "/home/maksym/.nuget/packages/opentk.compute/5.0.0-pre.15/opentk.compute.5.0.0-pre.15.nupkg.sha512",

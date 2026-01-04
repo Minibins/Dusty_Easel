@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dusty_Easel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8a950033bc67f3cb12915a6d01abe1de6dd82a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40f21a9db7f740472723dde68fe641f9f7b3b4b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dusty_Easel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dusty_Easel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

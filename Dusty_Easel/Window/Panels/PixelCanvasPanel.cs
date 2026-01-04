@@ -206,24 +206,12 @@ public class PixelCanvasPanel(PixelRenderer _renderer) : IRenderablePanel
                 {
                     if (SettingPanel.BrushSize == 1)
                         _renderer?.SetPixel(pixelPos.X, pixelPos.Y, color);
-                    else
-                        _renderer?.DrawCircle(pixelPos, SettingPanel.BrushSize / 2, color);
                 }
 
                 _lastPixelPos = pixelPos;
                 _isDrawing = true;
                 break;
-
-            case DrawTool.Fill:
-                if (!_isDrawing)
-                {
-                    var targetColor = _renderer?.GetPixel(pixelPos.X, pixelPos.Y) ?? Vector4.One;
-                    _renderer?.FloodFill(pixelPos.X, pixelPos.Y, targetColor, color);
-                    _isDrawing = true;
-                }
-
-                break;
-
+            
             case DrawTool.Line:
             case DrawTool.Circle:
             case DrawTool.Rectangle:

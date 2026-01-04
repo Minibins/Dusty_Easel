@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[1.91.6.1, )"
             },
+            "NativeFileDialogSharp": {
+              "target": "Package",
+              "version": "[0.6.0-alpha, )"
+            },
             "OpenTK": {
               "target": "Package",
               "version": "[5.0.0-pre.15, )"
