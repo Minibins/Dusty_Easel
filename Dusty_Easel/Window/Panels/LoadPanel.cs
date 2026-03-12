@@ -35,6 +35,7 @@ public class LoadPanel : IRenderablePanel
         {
             SaveLoadImage.LoadPngToBytes(_path, out byte[]? rgba, out int width, out int height);
             PixelRenderer.PixelData = rgba;
+            
         }
 
         ImGui.End();

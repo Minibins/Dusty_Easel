@@ -134,6 +134,7 @@ public class PixelRenderer : IDisposable
         GL.BindTexture(TextureTarget.Texture2d, 0);
     }
 
+
     public void Resize(int newWidth, int newHeight)
     {
         _textureWidth = newWidth;
@@ -143,7 +144,7 @@ public class PixelRenderer : IDisposable
 
         GL.DeleteTexture(TextureId);
         CreateFramebuffer();
-        ClearToColor(new Vector4(1, 1, 1, 1));
+        ClearToColor(_transparentColor);
     }
 
     public void Dispose() => GL.DeleteTexture(TextureId);
